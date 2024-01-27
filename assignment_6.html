@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      .services-span {
+        position: relative;
+        cursor: pointer;
+      }
+      .services-span:hover{
+        background-color: red;
+      }
+
+      .services-span::after {
+        content: "01)Cloud Computing, 02)Online Support, 03)Shipping, 04)Tutorial";
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #f8f8f8;
+        border: 1px solid #ccc;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 1;
+      }
+
+      .services-span:hover::after {
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <span class="services-span">Services</span>
+  </body>
+</html>
