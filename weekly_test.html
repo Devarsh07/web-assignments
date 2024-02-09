@@ -15,22 +15,15 @@
         .cart {
             height: 34px;
             width: 34px;
-            float: right;
-            margin-right: 49px;
-            margin-top: 4px;
         }
 
-        .header {
-            width: 100%;
-            height: 60px;
-            border: 1px solid black;
+        .header{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
             background-color: rgb(194, 194, 194);
-        }
-
-        .searchbar {
-            float: right;
-            margin-top: 7px;
-            margin-right: 257px;
+            border: 1px solid black;
+            height: 60px;
         }
 
         .input1 {
@@ -50,8 +43,6 @@
         }
         .logo{
             font-size: 30px;
-            margin-top: 11px;
-            margin-left: 77px;
         }
         .nav{
             width: 100%;
@@ -146,18 +137,28 @@
             margin-top: -6px;
             background-color: rgb(210, 243, 134);
         }
-        
+        @media screen and (max-width:'780px') {
+            
+        }
+        .c1{
+            transition: all .3s ease-in-out;
+            background-color: wheat;
+            cursor: pointer;
+        }
+        .c1:hover{
+            transform: scale(1.2);
+        }
     </style>
 </head>
 
 <body>
     <div class="header">
+        <div class="logo"><b><i>my-sitelogo</i></b></div>
+        <div class="searchbar"><input type="text" class="input1" placeholder="Search..." /><button class="button1">search</button>
+        </div>
         <div class="cart">
             <a href="#"><img src="https://www.nicepng.com/png/full/285-2851862_add-to-cart-png.png" alt="cart image"class="cart" /></a>
         </div>
-        <div class="searchbar"><input type="text" class="input1" placeholder="Search..." /><button class="button1">search</button>
-        </div>
-        <div class="logo"><b><i>my-sitelogo</i></b></div>
     </div>
     <div class="nav">
         <div class="navigationbtns">
@@ -201,7 +202,7 @@
                 <div class="item6">cell1</div>EUR 20.69 <br><b><h3>Product name lorem epsum dolloe sit amet</h3></b><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet tempora ipsam cumque illo quo perferendis?<br><br><button class="btn1">ADD TO CART</button></div>
             <div class="class1">
                 <div class="item7">cell1</div>EUR 20.69 <br><b><h3>Product name lorem epsum dolloe sit amet</h3></b><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet tempora ipsam cumque illo quo perferendis?<br><br><button class="btn1">ADD TO CART</button></div>
-            <div class="class1">
+            <div class="class1 c1">
                 <div class="item8">cell1</div>EUR 20.69 <br><b><h3>Product name lorem epsum dolloe sit amet</h3></b><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Amet tempora ipsam cumque illo quo perferendis?<br><br><button class="btn1">ADD TO CART</button></div>
            
 
